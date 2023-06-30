@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VARIABLES</title>
+    <!-- CONSEJO: CARGAR LOS SCRIPTS EXTERNOS ANTES DE EJECUTAR LOS INTERNOS  -->
+    <script src="funciones.js"></script>
+    
+    <script>
+        // EN ESTA ZONA SE SUELEN DECLARAR LAS VARIABLES DE AMBITO GLOBAL
+        var alumno_guay = "desconocido";
+        var nombre = "Jesus";
+        // PODEMOS OBTENER UN VALOR 'infinity'
+        var num = 1/0;
+        // DECLARAMOS UN DATO COMO 'null'
+        var dato = null;
+        // BOOL
+        // azar = true;
+        // alert(azar);
+        azar = confirm('Acepta (true) o cancela (false)');
+        console.log(azar);        
+                
+        
+        // alert(num);
+        // alert(dato);
+
+
+        // cambiaNombre();
+        // alert("Hola " + nombre);
+
+        // PARA METER DATOS DIRECTAMENTE (TEXTO LIBRE) DEBO USAR COMILLA/S "..." O '...'  
+
+        // TIPOS DE DATOS
+        // SOLO PODEMOS USAR LETRA Y NUMEROS, GUION BAJO _ Y DOLAR &
+        // RECOMENDADO EMPEZAR SIEMPRE POR LETRA O... NUMERO
+
+        // CONSTANTES - NO SE PUEDE MODIFICAR SU VALOR EN LA EJECUCION
+        // CUANDO LA DECLARO TENGO QUE ASIGNARLA
+        // const pelotilla_1 = "Julio";
+        // const insufrible_1 = "Rocio es una buena alumna pero un poco quisquillosa antes del desayuno...";
+
+        // VARIABLES - SE PUEDEN MODIFICAR DURANTE LA EJECUCION
+        // DECLARACION DE LA VARIABLE --> AMBITO GLOBAL
+        // var alumno_guay;
+        // POR DEFECTO SI NO LO INDICAMOS EL AMBITO ES LET --> AMBITO LOCAL
+        // let alumno_guay;
+        // ASIGNACION DE LA VARIABLE
+        // var alumno_guay = "desconocido";
+        // JS ME PERMITE DECLARAR Y ASIGNAR AL MISMO TIEMPO
+        // var alumno_guay = "El hombre invisible";
+        // imprimeAlumno();
+
+        
+        // let
+
+        // EXISTEN HABITUALES 3 MODOS DE COUMUNICARSE CON EL NAVEGADOR
+        // 1.- VENTANAS MODALES: alert(''); confirm(''); prompt('');
+        // 2.- INYECTAR CODIGO EN EL DOCUMENTO: document.write('');
+        // 3.- MEDIANTE LA CONSOLA DE JAVASCRIPT (F12):
+        // console.log();   --> MUESTRA MENSAJE NORMAL POR CONSOLA JS DEL NAVEGADOR (F12)
+        // console.info();  --> MUESTRA MENSAJE 'INFO' POR CONSOLA JS DEL NAVEGADOR (F12)
+        // console.warn():  --> MUESTRA MENSAJE 'WARNING' POR CONSOLA JS DEL NAVEGADOR (F12)
+        // console.error(); --> MUESTRA MENSAJE 'ERROR' POR CONSOLA JS DEL NAVEGADOR (F12)
+        // console.clear(); --> BORRA TODOS LOS MENSAJES EN LA CONSOLA JS DEL NAVEGADOR (F12)
+
+
+
+        // ********** ESTAS LAS ESTUDIAMOS UN POCO MAS ADELANTE **********
+        // APARTE PODEMOS INYECTAR CODIGO '...innerHtml('')...'
+        // O PODEMOS CREAR ELEMENTOS CON '...appendChild('')...' o '...innerAdjacent('')...'
+        // insufrible_1 = "Rocio es guay!";
+        // alert(insufrible_1);
+        // alert('Pero el alumno mas guay a primera hora es pelotilla_1');  
+        
+        // PODEMOS USAR METODO .write('...') PARA INSERTAR TEXTO EN EL DOCUMENTO
+        // document.write('Esto es un texto incrustado');
+
+        // METODO .OPEN('') --> ABRE VENTANA EMERGENTE EN NUEVA PESTAÑA DEL NAVEGADOR
+        // window.open('https://www.google.es/');
+
+        // let estado = window.closed;
+        // alert(estado);
+
+
+        // var
+        // let
+    </script>
+    <style>
+        noscript{
+            border: 1px solid red;
+            box-shadow: 5px 6px 12px lightcoral;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>VARIABLES JS</h1>
+    <script>
+   
+    document.write('<h3 id="txt">POR FAVOR, CONFIGURALO O ACTIVA SU FUNCIONALIDAD</h3>');
+    document.write('<ul id="lista"><li>POR FAVOR,</li><li>CONFIGURALO O</li><li>ACTIVA SU</li><li>FUNCIONALIDAD</li></ul>');
+    document.getElementById('txt').style.color='blue';
+    document.getElementById('lista').style.listStyleType = 'none';
+    document.getElementById('lista').style.display = 'flex';
+
+    </script>
+    <!-- TEXTO O MENSAJE QUE APARECE EN PANTALLA SOLO CUANDO NO PUEDE EJECUTAR JS -->
+    <noscript>
+        <h1>ESTA PAGINA UTILIZA CODIGO EN JAVASCRIPT</h1>
+        <h2>PERO ESTE NAVEGADOR NO SOPORTA JAVASCRIPT</h2>
+        <h3>POR FAVOR, CONFIGURALO O ACTIVA SU FUNCIONALIDAD</h3>
+    </noscript>
+</body>
+</html>

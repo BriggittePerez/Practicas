@@ -1,0 +1,10 @@
+body{
+    background-color: darkseagreen;
+}
+h1{
+    text-align: center;
+}
+.miColor{
+    display: inline-block;
+    margin: 45px;
+}

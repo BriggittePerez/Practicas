@@ -1,0 +1,18 @@
+function cambiarFondo(){
+    document.getElementById('usuario').style.backgroundColor="yellow";
+}
+
+function capturaTexto(){
+    document.getElementById('visor').value = document.getElementById('usuario').value;
+}
+function muestraForm(){
+    document.getElementById('miForm').style.visibility="visible";
+}
+
+function ocultaForm(){
+    document.getElementById('miForm').style.visibility="hidden";
+}
+function colorFondo(){
+    document.getElementById('miBoton').style.backgroundColor = 'yellow';
+    document.getElementById('miForm').style.backgroundColor = 'blue';
+}

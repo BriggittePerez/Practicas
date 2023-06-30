@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVASCRIPT BASICO</title>
+    <!-- <script src="/js/index.js"></script> -->
+    <script>
+        /* SOLO PUEDO ESCRIBIR CON LA SINTAXIS DE JAVASCRIPT NO CON LA DE HTML*/
+        
+        // COMENTARIO DE LINEA CON DOBLE SLASH
+        
+        /*COMENTARIO DE BLOQUE O MULTILINEA
+        EMPIEZA CON / * Y SE CIERRAN CON * / 
+        IGUAL QUE CSS*/
+
+        // VENTANAS MODALES
+        // ****************
+        // ALERT MUESTRA UNA VENTANA CON UN MENSAJE - SOLO DEJA CERRAR
+        // alert('Hola Julio');
+        // CONFIRM MUESTRA UNA VENTANA CON UN MENSAJE - DEJA CONFIRMAR O CANCELAR
+        // confirm('Salimos de la ventana modal?');
+        
+        // let userName = prompt('Hola Rocio, me dices tus apellidos?');
+        // alert(userName);
+        // confirm(userName);
+
+
+    </script>
+    <style>
+        /* SOLO PUEDO ESCRIBIR CON LA SINTAXIS DE CSS NO CON LA DE HTML */
+    </style>
+</head>
+<body>
+    <h1 id="titulo">Hola Julio</h1>
+    <script>
+        document.write('<h1 id="titulo">Hello alumnis!</h1>');
+        document.write('<p>Bienvenidos a mi página web creada integramente con Javascript</p>');
+        document.write('<ul>');
+        document.write('<li>Menu 1</li>');
+        document.write('<li>Menu 2</li>');
+        document.write('</ul>');
+        // let orden = 'getElementById';
+        
+        document.getElementById('titulo').style.color='blue';
+        document.getElementById('titulo').style.textAlign='center';
+        
+    </script>
+
+</body>
+<!-- AQUI SI ESTA ACONSEJADO -->
+<script>
+
+</script>
+</html>
