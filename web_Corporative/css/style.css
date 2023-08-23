@@ -1,0 +1,332 @@
+header{
+    height: 100px;/*altura del del contenedor*/
+    background-color: #4D4D5C; /*color de fondo*/
+    padding: 0 50px; /*espacio entre el contenedor y el elemento*/
+    color: #fff; /*color de texto*/
+    display: flex; /* el flex se coloca en el contenedor para que los elementos puedan quedar uno al lado del otro*/
+    justify-content: space-between; /* longitud de separacion entre cada elemento*/
+    align-items: center; /*para que los elementos queden centrados dentro del contenedor*/
+}
+
+.logo{
+    text-transform: uppercase; /*coloca el texto en mayuscula*/
+    color: #6CC091; /*color al texto*/
+    font-weight: 200; /*grosor del texto*/ 
+}
+
+.menu a{
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none; /*quitar el subrayado*/
+    padding: 0 10px;
+    transition: 0.4s;   
+}
+
+.mostrarMenu,
+.esconderMenu{
+    font-size: 30px; /*tamaño del  texto*/
+    cursor: pointer;
+    display: none; /*desaparece el elemento que tiene esta clase*/
+    transition: 0.4s;
+
+}
+
+.mostrarMenu{
+    order: 1; /*pone en orden los elementos, coloca */
+
+}
+
+#check{
+    display: none; /*desaparece el elemento*/
+}
+
+.menu a:hover,
+.mostrarMenu:hover,
+.esconderMenu:hover{
+    color: #6CC091;
+
+}
+
+/*BANNER*/
+
+
+#banner{
+    padding: 0 50px;
+    background-image: url(/img/banner.jpg);
+    height: 80vh;
+    background-size: cover; /* para que ocupe todo el contenedor*/
+    background-position: center;
+}
+#banner::before{
+    content: '';
+    background:rgba(77,77,92, 0.5);
+    position: absolute;
+    width: 100%;
+    left: 0;
+} 
+
+.contenidoBanner{
+    position: relative; /*para que el contenido suba por encima*/
+    color: #fff;
+    height: 100%; /*esta añtura para luego poder manipularla con un display*/
+    display: flex; /*para que los elementos sean flexibles, estaras uno al lado del otro*/
+    flex-direction: column; /*coloca los elementos en bloque, uno debajo del otro*/
+    justify-content: center;
+}
+
+.contenidoBanner h3{
+    font-size: 30px;
+    font-weight: 400;
+    padding: 10px 0;
+}
+
+.contenidoBanner h3 span{
+    font-weight: 600;
+    position: relative; /*para que dicho elemento se coloque por encima de todos*/  
+}
+
+.botonEmpezar{
+    text-decoration: none; /*quita el subrayado a la palabra*/
+    color: #fff;
+    border: 1px solid #6cc091;
+    padding: 20px 40px;
+    align-self: baseline; /*ya no ocupa todo el interior del contenedor*/
+}
+
+.botonEmpezar:hover{
+    background: #6cc09070;
+}
+
+/*PERSONAS*/
+
+#personas{
+    padding: 50px 50px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+#personas img{
+    border-radius: 100%; /*para colocar la imagen totalmente redonda*/
+}
+
+#personas div{
+    padding: 30px 30px;
+}
+
+#personas div h4{
+    color: #4D4D5C; /*color corporativo*/
+    font-size: 20px;
+    margin: 15px 0px;
+}
+
+#personas div p{
+    color: #737381; 
+    font-size: 18px;
+}
+
+.botonSaberMas{
+    text-decoration: none;
+    color: #4D4D5C;
+    padding: 10px 30px;
+    border: 3px solid #6cc091;
+    display: inline-block; /*para que no se sobre ponga uno sobre el otro*/
+    border-radius: 30px;
+    margin-top: 15px;
+    transition: all 0.4s;
+}
+
+.botonSaberMas:hover{
+    background:#6cc091;
+    color: #fff;
+}
+/*ICONOS*/
+
+#iconos{
+    padding: 0px 40px;
+    background: rgba(77,77,92 ,0.6); /*color de fondo*/
+}
+#contenidoIconos{
+    padding: 50px 50px 0 50px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+#contenidoIconos div{
+    flex: 1; /*para que ocupe cada uno siempre lo mismo en la separacion entre elementos y el contenedor*/
+    border-right: 2px solid rgba(255, 255, 255, 0.2);
+
+}
+
+#contenidoIconos div:last-child{
+    border-right: none;
+}
+
+#contenidoIconos div i{
+    color: #6cc091;;
+}
+
+#contenidoIconos div h6{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 100;
+    margin: 10px 0px;
+}
+
+#contenidoIconos div p{
+    color: rgba(255, 255, 255, 0.55);
+    font-size: 15px;
+}
+
+.botonIconos{
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+/*FORMULARIO*/
+#contacto{
+    background: #6CC091;
+    padding: 50px 0px;
+    color: #fff;
+}
+
+#contacto h4{
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+#contacto form{
+    max-width: 80%;
+    margin: 0 auto; /*para centrar el formulario*/
+}
+
+.datosForm{
+    display: flex;
+}
+
+.datosForm div{
+    padding: 10px;
+    flex: 1; /* para que ocupe lo mismo cada uno*/
+}
+
+form label{ /*todos los label que se encuentran detro de form*/
+    display: block;
+    margin-bottom: 10px;
+}
+
+form input,
+form textarea{
+    background:#6CC091;
+    border-radius: 10px;
+    border: 2px solid #8dcca9;
+    padding: 10px px;
+    outline: 0; /*para que el borde del campo no se coloque de un color cuando lo seleccionemos*/
+    color: #fff;
+    width: 100% ;
+}
+
+form input:focus,
+form textarea:focus{
+    border-color: #4bae77;
+    box-shadow: 0 0 0 1px #4bae77;
+}
+
+form input::placeholder,
+form textarea::placeholder{
+    color: #fff;
+}
+
+.mensaje{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.botonFormulario .botonSaberMas{
+    display: block;
+    border: 1px solid #fff;
+    color: #fff;
+    text-align: center;
+    transition: 0.4s;
+}
+
+.botonFormulario .botonSaberMas:hover{
+    background: #4bae77;
+}
+
+footer{
+
+    background: #4D4D5C;
+    color: #cccccc4a;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/*RESPONSIVE*/
+
+@media (max-width:768px){
+    /*HEADER*/
+    .mostrarMenu,
+    .esconderMenu{
+        display: block; /*coloca los elementos en bloque*/
+    }
+
+
+    .menu{
+        position:fixed; /*deja fijo el menu*/
+        width: 100%; /*para que ocupe el 100% de la pantalla*/
+        height: 100vh; /* 100% de la altura del contenedor del menu*/
+        background-color: #4D4D5C; /*color de fondo del contenedor*/
+        right: -100%; /* 80% libre por la izquierda, el otro 20% es mostrando el elemento, si ollle colocamos 100% libre de ver el elemento, ya este se encontrara por completo oculto*/
+        top: 0;
+        text-align: center; /*centra el texto*/
+        padding: 100px 0;
+        z-index: 100; /* valor z-index cubren aquellos con menor valor*/
+        transition: 0.8s;
+    }
+
+    .menu a{
+        display: block; /*col
+        
+        
+        oca los elementos en bloque*/
+        padding: 20px;
+    }
+
+    .esconderMenu{
+        position: absolute;
+        top: 40px;
+        right: 40px;
+    }
+
+    #check:checked ~ .menu{
+        right: 0;
+
+    }
+
+    /*PERSONAS*/
+    #personas{
+        flex-direction: column;
+    }
+
+    /*ICONOS*/
+    
+    #contenidoIconos{
+        flex-direction: column;
+    }
+
+    #contenidoIconos div{
+        border: none;
+    }
+
+    /*FORMULARIO*/
+    .datosForm{
+        flex-direction: column;
+    }
+
+
+
+
+}
